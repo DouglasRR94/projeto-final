@@ -32,6 +32,22 @@ $colors: (
   facebook:   #3b5998
 );
 
+$toolbar-md-title-text-color: #f4f4f4;
+$toolbar-ios-title-text-color: #f4f4f4;
+$toolbar-wp-title-text-color: #f4f4f4;
+
+ion-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 90px 1px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+
+
 
 // App iOS Variables
 // --------------------------------------------------

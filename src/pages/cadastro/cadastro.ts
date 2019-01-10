@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SlidePage } from "../slide/slide";
+import { MenuPage } from "../menu/menu";
 
 /**
  * Generated class for the CadastroPage page.
@@ -22,4 +24,11 @@ export class CadastroPage {
     console.log('ionViewDidLoad CadastroPage');
   }
 
+  goToSlides() {
+    this.navCtrl.push(SlidePage);
+  }
+
+  goToMenu() {
+    this.navCtrl.push(MenuPage);
+  }
 }

@@ -1,3 +1,13 @@
+ion-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 90px 1px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
 .ion-ios-add:before {
   content: "\f102";
 }
@@ -21996,7 +22006,7 @@ ion-navbar.toolbar {
   text-align: center;
   font-size: 1.7rem;
   font-weight: 600;
-  color: #000;
+  color: #f4f4f4;
   pointer-events: auto;
 }
 
@@ -23999,7 +24009,7 @@ ion-navbar.toolbar {
   padding: 0 12px;
   font-size: 2rem;
   font-weight: 500;
-  color: #424242;
+  color: #f4f4f4;
 }
 
 .bar-buttons-md {
@@ -24058,8 +24068,8 @@ ion-navbar.toolbar {
 .bar-button-outline-md {
   border-width: 1px;
   border-style: solid;
-  border-color: #424242;
-  color: #424242;
+  border-color: #f4f4f4;
+  color: #f4f4f4;
   background-color: transparent;
 }
 
@@ -24072,21 +24082,21 @@ ion-navbar.toolbar {
 }
 
 .bar-button-outline-md .button-effect {
-  background-color: #424242;
+  background-color: #f4f4f4;
 }
 
 .bar-button-solid-md {
-  color: #fff;
-  background-color: #424242;
+  color: #424242;
+  background-color: #f4f4f4;
 }
 
 .bar-button-solid-md:hover:not(.disable-hover) {
-  color: #fff;
+  color: #424242;
 }
 
 .bar-button-solid-md.activated {
-  color: #fff;
-  background-color: #515151;
+  color: #424242;
+  background-color: #e0e0e0;
 }
 
 .bar-button-md.bar-button-icon-start ion-icon {
@@ -24159,27 +24169,27 @@ ion-navbar.toolbar {
 .bar-button-default-md,
 .bar-button-clear-md-default,
 .bar-button-md-default {
-  color: #424242;
+  color: #f4f4f4;
   background-color: transparent;
 }
 
 .bar-button-default-md:hover:not(.disable-hover),
 .bar-button-clear-md-default:hover:not(.disable-hover),
 .bar-button-md-default:hover:not(.disable-hover) {
-  color: #424242;
+  color: #f4f4f4;
 }
 
 .bar-button-clear-md,
 .bar-button-clear-md-clear,
 .bar-button-md-clear {
-  color: #424242;
+  color: #f4f4f4;
   background-color: transparent;
 }
 
 .bar-button-clear-md:hover:not(.disable-hover),
 .bar-button-clear-md-clear:hover:not(.disable-hover),
 .bar-button-md-clear:hover:not(.disable-hover) {
-  color: #424242;
+  color: #f4f4f4;
 }
 
 .toolbar-md-primary .toolbar-background-md {
@@ -25893,7 +25903,7 @@ ion-navbar.toolbar {
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #000;
+  color: #f4f4f4;
   padding: 0 6px;
 }
 
@@ -27968,6 +27978,10 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+.toolbar-background {
+  background-color: red;
+}
+
 page-cadastro .background {
   background-image: url("../assets/pizza.jpg");
 }
@@ -28045,4 +28059,95 @@ page-cadastro .icon {
 page-cadastro .bottom {
   position: absolute;
   bottom: 0;
+}
+
+page-menu .card-background-page ion-card {
+  position: relative;
+  text-align: center;
+}
+
+page-menu .card-background-page .card-title {
+  position: absolute;
+  top: 36%;
+  font-size: 2.0em;
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+}
+
+page-menu .card-background-page .bar-button {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  text-overflow: ellipsis;
+  text-transform: none;
+  white-space: nowrap;
+  cursor: pointer;
+  vertical-align: top;
+  vertical-align: -webkit-baseline-middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+page-menu .card-background-page .bar-button-default-md {
+  color: #fff;
+  background-color: transparent;
+}
+
+page-menu .card-background-page .bar-button-md {
+  margin: 0 0.2rem;
+  padding: 0 5px;
+  border-radius: 2px;
+  height: 32px;
+  border: 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+page-slide .tutorial-page .toolbar-background {
+  background: #fff;
+  border-color: transparent;
+}
+
+page-slide .tutorial-page .swiper-pagination-bullet-active {
+  background: #f53d3d;
+}
+
+page-slide .tutorial-page .slide-zoom {
+  height: 100%;
+}
+
+page-slide .tutorial-page .slide-title {
+  margin-top: 2.8rem;
+}
+
+page-slide .tutorial-page .slide-image {
+  max-height: 50%;
+  max-width: 60%;
+  margin: 18px 0;
+}
+
+page-slide .tutorial-page b {
+  font-weight: 500;
+}
+
+page-slide .tutorial-page p {
+  padding: 0 40px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #60646B;
+}
+
+page-slide .tutorial-page p b {
+  color: #000000;
 }

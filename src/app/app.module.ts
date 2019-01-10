@@ -3,30 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { CadastroPage } from '../pages/cadastro/cadastro';
-import { BuscaPage } from '../pages/busca/busca';
+
+import { CadastroPageModule } from "../pages/cadastro/cadastro.module";
+import { SlidePageModule } from "../pages/slide/slide.module";
+import { MenuPageModule } from "../pages/menu/menu.module";
+
 
 @NgModule({
   declarations: [
     MyApp,
-    CadastroPage,
-    BuscaPage,
-    TabsPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    SlidePageModule,
+    MenuPageModule,
+    CadastroPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    CadastroPage,
-    BuscaPage,
-    TabsPage
   ],
   providers: [
     StatusBar,

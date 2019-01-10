@@ -1,0 +1,59 @@
+page-menu {
+    .card-background-page {
+
+        ion-card {
+            position: relative;
+            text-align: center;
+        }
+
+        .card-title {
+            position: absolute;
+            top: 36%;
+            font-size: 2.0em;
+            width: 100%;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .bar-button {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            position: relative;
+            display: inline-block;
+            line-height: 1;
+            text-overflow: ellipsis;
+            text-transform: none;
+            white-space: nowrap;
+            cursor: pointer;
+            vertical-align: top;
+            vertical-align: -webkit-baseline-middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+}
+
+        .bar-button-default-md, {
+        color: #fff;
+        background-color: transparent;
+}
+
+        .bar-button-md {
+        margin: 0 0.2rem;
+        padding: 0 5px;
+        border-radius: 2px;
+        height: 32px;
+        border: 0;
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-transform: uppercase;
+}
+
+
+    }
+}

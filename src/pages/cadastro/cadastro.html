@@ -1,24 +1,12 @@
 <ion-content class="background">
 	<ion-card>
 		<ion-card-header>
-			Cadastro
+			Você é novo no Restaurante?
 		</ion-card-header>
 		<ion-card-content>
 			<ion-list no-line>
-				<ion-item>
-					<ion-input type="text" placeholder="Nome"></ion-input>
-				</ion-item>
-				<ion-item>
-					<ion-input type="text" placeholder="Tamanho"></ion-input>
-				</ion-item>
-				<ion-item>
-					<ion-input type="number" placeholder="Valor"></ion-input>
-				</ion-item>
-				<button ion-button block outline color="light">Cadastrar</button>
-				<p>OU</p>
-				<button ion-button block color="facebook">
-					<ion-icon name="logo-facebook"></ion-icon> Logar com Facebook
-				</button>
+				<button ion-button block outline color="light" (click) = "goToSlides()">Sim</button>
+				<button ion-button block outline color="light" (click) = "goToMenu()">Não</button>
 			</ion-list>
 		</ion-card-content>
 	</ion-card>
