@@ -14,6 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'cardapiobebidas.html',
 })
 export class CardapiobebidasPage {
+  
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

@@ -10,6 +10,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { CadastroPageModule } from "../pages/cadastro/cadastro.module";
 import { SlidePageModule } from "../pages/slide/slide.module";
 import { MenuPageModule } from "../pages/menu/menu.module";
+import { CardapiobebidasPageModule } from "../pages/cardapiobebidas/cardapiobebidas.module";
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { MenuPageModule } from "../pages/menu/menu.module";
     IonicModule.forRoot(MyApp),
     SlidePageModule,
     MenuPageModule,
-    CadastroPageModule
+    CadastroPageModule,
+    CardapiobebidasPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

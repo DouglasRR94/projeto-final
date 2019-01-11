@@ -7,12 +7,65 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>cardapiobebidas</ion-title>
+    <ion-title>Bebidas</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
+
+
 <ion-content padding>
 
+  <ion-searchbar
+  [(ngModel)]="myInput"
+  [showCancelButton]="shouldShowCancel"
+  >
+</ion-searchbar>
+
+<ion-content class="cards-bg">
+ 
+ 
+  <ion-card>
+
+    <div>
+      <img class="img-card" src="../assets/coca.jpg"/>
+    </div>
+
+    <ion-card-content>
+      <ion-card-title>
+        Run-D.M.C.
+      </ion-card-title>
+      <p>
+        R$ 20,00
+      </p>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="danger" icon-start>
+          
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="danger" icon-start>
+          
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='cart'></ion-icon>
+         
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+
+
 </ion-content>
+
+</ion-content>
+
+

@@ -5,13 +5,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { CadastroPage } from "../pages/cadastro/cadastro";
 import { MenuPage } from "../pages/menu/menu";
 import { SlidePage } from "../pages/slide/slide";
+import { CardapiobebidasPage } from "../pages/cardapiobebidas/cardapiobebidas";
 
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = MenuPage;
+  rootPage:any = CardapiobebidasPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
